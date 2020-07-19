@@ -1,0 +1,50 @@
+h1{
+	text-align:center;
+}
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#EEFEFB;
+}
+.navegacion{
+	width: 80%;
+	margin: 30px auto;
+	background:#F6F5D4 ;
+}
+.navegacion ul{
+	list-style: none;
+}
+.menu > li{
+	position: relative;
+	display: inline-table;
+}
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	text-decoration: none;
+	color: black;
+}
+.menu  li  a:hover{
+	color:#004BFD;
+	transition: all .3s;
+}
+.submenu{
+	position: absolute;
+	background: #BCBCBC;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+.submenu  li  a{
+	display: block;
+	padding: 15px;
+	color: black;
+	text-decoration: none;
+}
+.menu  li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
